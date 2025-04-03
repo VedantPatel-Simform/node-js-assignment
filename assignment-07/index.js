@@ -25,10 +25,8 @@ http
           res.end("Error reading form template.");
           return;
         }
-
-        // Render the registration form template
-        res.writeHead(200, { "Content-Type": "text/html" });
-        res.end(template);
+        res.statusCode = 200;
+        res.end(ejs.render(template, {}));
       });
     }
 
@@ -59,10 +57,8 @@ http
             return;
           }
 
-          // display the submitted data on the submitted page
-          const html = ejs.render(template, data);
-          res.writeHead(200, { "Content-Type": "text/html" });
-          res.end(html);
+          res.statusCode = 200;
+          res.end(ejs.render(template, data));
         });
       });
     }
