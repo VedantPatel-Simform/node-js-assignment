@@ -25,7 +25,7 @@ http
           res.end("Error reading form template.");
           return;
         }
-        res.statusCode = 200;
+        res.writeHead(200, { "Content-Type": "text/html" });
         res.end(ejs.render(template, {}));
       });
     }
@@ -57,7 +57,8 @@ http
             return;
           }
 
-          res.statusCode = 200;
+          // display the submitted data on the submitted page
+          res.writeHead(200, { "Content-Type": "text/html" });
           res.end(ejs.render(template, data));
         });
       });
