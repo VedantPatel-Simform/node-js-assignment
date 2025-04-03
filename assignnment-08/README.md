@@ -1,4 +1,4 @@
-## Rendering engines assignment
+## Authorization and Authentication assignment
 
 Implemented a JWT authentication and authorization
 
