@@ -35,7 +35,9 @@ function calculateTime() {
   const outputMins = +outTimeInMinutes % 60;
 
   let date = new Date();
-  date.setDate(date.getDate() - 1);
+  if (outputHrs < 0) {
+    date.setDate(date.getDate() - 1);
+  }
   return `${Math.abs(outputHrs)}:${Math.abs(
     outputMins
   )} ${date.toLocaleDateString("en-US", {
