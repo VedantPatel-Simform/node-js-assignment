@@ -38,5 +38,9 @@ function calculateTime() {
   date.setDate(date.getDate() - 1);
   return `${Math.abs(outputHrs)}:${Math.abs(
     outputMins
-  )} ${date.toLocaleDateString()}`;
+  )} ${date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "2-digit",
+  })}`;
 }
