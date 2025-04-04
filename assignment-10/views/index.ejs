@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Operations</title>
+</head>
+
+<body>
+    <h2>File Operations</h2>
+    <a href="/create-file">Create File</a> <br>
+    <a href="/read-file">Read File</a> <br>
+    <a href="/write-file">Write (Overwrite) File</a> <br>
+    <a href="/append-file">Append to File</a> <br>
+    <a href="/stream-file">Stream File</a> <br>
+
+    <h2>Upload File</h2>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <input type="file" id="fileInput" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+
+</html>
