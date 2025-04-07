@@ -1,9 +1,9 @@
 export const SHOP_SCHEDULE = [
-  // {
-  //   day: "Mon",
-  //   open: "07:00 AM",
-  //   close: "07:00 PM",
-  // },
+  {
+    day: "Mon",
+    open: "12:00 PM",
+    close: "07:00 PM",
+  },
   {
     day: "Tue",
     open: "07:00 AM",
